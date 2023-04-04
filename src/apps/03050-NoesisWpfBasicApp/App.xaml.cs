@@ -16,17 +16,21 @@ namespace NoesisWpfBasicApp
         [STAThread]
         private static void Main(string[] args)
         {
-            Container = new AppContainer(new App());
-            var app = Container.Resolve<App>().Value;
+            // Container = new AppContainer(new App());
+            //var app = Container.Resolve<App>().Value;
 
             //app.Uri = "App.xaml";
             //app.StartupUri = new Uri("MainWindow.xaml", UriKind.Relative);
 
             
+            //app.Uri = "/NoesisWpfBasicApp;component/App.xaml";
+            //app.StartupUri = new Uri("MainWindow.xaml", UriKind.Relative);
+
+            App app = new App();
             app.Uri = "/NoesisWpfBasicApp;component/App.xaml";
             app.StartupUri = new Uri("MainWindow.xaml", UriKind.Relative);
-
             app.Run();
+
 
         }
         protected override Display CreateDisplay()

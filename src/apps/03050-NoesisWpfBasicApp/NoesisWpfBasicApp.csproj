@@ -12,7 +12,18 @@
 		<TargetFramework>net7.0</TargetFramework>
 		<RuntimeIdentifiers>win-x64;linux-x64;linux-arm64</RuntimeIdentifiers>
 		<PublishReadyToRun>true</PublishReadyToRun>
+		<RootNamespace>NoesisWpfBasicApp</RootNamespace>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="App.xaml" />
+	  <None Remove="MainWindow.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="App.xaml" />
+	  <EmbeddedResource Include="MainWindow.xaml" />
+	</ItemGroup>
 
 
 	<ItemGroup>
