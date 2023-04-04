@@ -1,9 +1,8 @@
-﻿<Application x:Class="NoesisWpfBasicApp.App"
+﻿<noesisns:Application x:Class="NoesisWpfBasicApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:NoesisWpfBasicApp"
+             xmlns:noesisns="clr-namespace:NoesisApp;assembly=Noesis.App"
              StartupUri="MainWindow.xaml">
-    <Application.Resources>
-         
-    </Application.Resources>
-</Application>
+
+</noesisns:Application>
